@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Organic Farming — sustainable practices, tips, and resources to grow healthy food and protect the environment.">
+  <title>Organic Farming</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Organic Farming</h1>
+      <nav aria-label="Primary navigation">
+        <ul class="nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#practices">Practices</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Grow healthy food, protect the planet</h2>
+        <p>Learn practical organic farming methods, seasonal tips, and resources for small and home farms.</p>
+        <p><a class="btn" href="#practices">Get Started</a></p>
+      </div>
+    </section>
+
+    <section id="about" class="container content-block">
+      <h2>About Organic Farming</h2>
+      <p>Organic farming uses natural inputs and ecological processes to build healthy soil, conserve water, and reduce chemical use. It supports biodiversity and produces nutritious food.</p>
+    </section>
+
+    <section id="practices" class="container content-block">
+      <h2>Core Practices</h2>
+      <ul class="practices-list">
+        <li><strong>Crop rotation:</strong> Rotate crops to improve soil health and control pests.</li>
+        <li><strong>Composting:</strong> Recycle organic waste into nutrient-rich compost.</li>
+        <li><strong>Cover crops:</strong> Prevent erosion and fix nitrogen in the soil.</li>
+        <li><strong>Natural pest control:</strong> Use beneficial insects and companion planting.</li>
+      </ul>
+    </section>
+
+    <section id="benefits" class="container content-block">
+      <h2>Benefits</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Healthier Food</h3>
+          <p>Fewer synthetic residues and more nutrient-dense produce.</p>
+        </article>
+        <article class="card">
+          <h3>Soil Health</h3>
+          <p>Improved structure and fertility through organic matter and rotations.</p>
+        </article>
+        <article class="card">
+          <h3>Biodiversity</h3>
+          <p>Supports pollinators and a rich ecosystem on the farm.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="faq" class="container content-block">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Do I need a large plot to start organic farming?</summary>
+        <p>No — many organic techniques work well for small plots, containers, and backyards.</p>
+      </details>
+      <details>
+        <summary>How do I start composting?</summary>
+        <p>Combine greens (kitchen scraps) and browns (dry leaves), maintain moisture and occasional turning.</p>
+      </details>
+    </section>
+
+    <section id="contact" class="container content-block">
+      <h2>Contact</h2>
+      <form id="contactForm" action="mailto:info@organicfarm.com" method="post" enctype="text/plain" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button class="btn" type="submit">Send</button>
+      </form>
+      <p class="muted">Or email us at <a href="mailto:info@organicfarm.com">info@organicfarm.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Organic Farming — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // simple JS: set year and basic form check
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function (e) {
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        form.reportValidity();
+      } else {
+        // fallback: show small notice (mailto will open email client in many cases)
+        alert('Your message will open in your email client. If that does not work, email info@organicfarm.com');
+      }
+    });
+  </script>
+</body>
+</html>
