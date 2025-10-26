@@ -11,13 +11,24 @@
   <header class="site-header">
     <div class="container header-inner">
       <h1 class="brand">Organic Farming</h1>
-      <nav aria-label="Primary navigation">
+      <button id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation">☰</button>
+      <nav id="mainNav" aria-label="Primary navigation">
         <ul class="nav">
           <li><a href="#about">About</a></li>
           <li><a href="#practices">Practices</a></li>
+          <li><a href="#soil">Soil</a></li>
+          <li><a href="#amendments">Amendments</a></li>
+          <li><a href="#pests">Pest & Disease</a></li>
           <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#tutorials">Tutorials</a></li>
+          <li><a href="#seasonal">Seasonal Tips</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#certification">Certification</a></li>
+          <li><a href="#economics">Economics</a></li>
+          <li><a href="#casestudies">Case Studies</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -35,6 +46,7 @@
     <section id="about" class="container content-block">
       <h2>About Organic Farming</h2>
       <p>Organic farming uses natural inputs and ecological processes to build healthy soil, conserve water, and reduce chemical use. It supports biodiversity and produces nutritious food.</p>
+      <p>Our site focuses on practical guides you can use at home, community farming, and smallholdings. Content includes step-by-step tutorials, seasonal calendars, and vetted external resources.</p>
     </section>
 
     <section id="practices" class="container content-block">
@@ -44,25 +56,163 @@
         <li><strong>Composting:</strong> Recycle organic waste into nutrient-rich compost.</li>
         <li><strong>Cover crops:</strong> Prevent erosion and fix nitrogen in the soil.</li>
         <li><strong>Natural pest control:</strong> Use beneficial insects and companion planting.</li>
+        <li><strong>Mulching:</strong> Reduce water loss and suppress weeds.</li>
+        <li><strong>Soil testing:</strong> Test pH and nutrients before major amendments.</li>
       </ul>
     </section>
 
-    <section id="benefits" class="container content-block">
-      <h2>Benefits</h2>
+    <section id="soil" class="container content-block">
+      <h2>Soil: Foundation of Organic Farming</h2>
+      <p>Soil is a living ecosystem. Healthy soil supports plant growth, stores water, cycles nutrients, and suppresses disease.</p>
+      <h3>Key soil characteristics</h3>
+      <ul>
+        <li><strong>Structure:</strong> Aggregation and porosity determine root penetration and drainage.</li>
+        <li><strong>Organic matter:</strong> Aim for steady increases — improves water retention, nutrient exchange and microbial life.</li>
+        <li><strong>pH & nutrients:</strong> Most vegetables prefer pH 6.0–7.0; test for N, P, K, Ca, Mg and micronutrients.</li>
+        <li><strong>Biology:</strong> Earthworms, bacteria, fungi and microarthropods drive nutrient cycling — protect them by avoiding harsh chemicals.</li>
+      </ul>
+      <h3>Practical soil tests and actions</h3>
+      <ul>
+        <li>Start with a basic soil test from your extension service. Interpret results before adding lime or fertilizer.</li>
+        <li>Add compost regularly (1–3 cm per year), use cover crops to capture nutrients and build organic matter.</li>
+        <li>Minimize tillage where feasible to preserve fungal networks and soil structure.</li>
+      </ul>
+    </section>
+
+    <section id="amendments" class="container content-block">
+      <h2>Amendments & Composting (Detailed)</h2>
+      <h3>Compost best practices</h3>
+      <ul>
+        <li>Balance greens (nitrogen: kitchen scraps, fresh greens) and browns (carbon: straw, dry leaves). Target ~2:1 browns:greens by volume.</li>
+        <li>Maintain moisture like a wrung-out sponge; turn periodically to aerate and speed decomposition.</li>
+        <li>Hot composting (55–65°C) kills many weed seeds and pathogens; smaller piles will decompose slower but still produce good compost.</li>
+      </ul>
+      <h3>Common amendments</h3>
+      <ul>
+        <li><strong>Well-rotted manure:</strong> Adds nutrients and organic matter, apply carefully to avoid burning plants.</li>
+        <li><strong>Bone meal, rock phosphate:</strong> Slow-release P sources for low-phosphorus soils.</li>
+        <li><strong>Lime or sulfur:</strong> Adjust pH only after testing; apply gradually and retest.</li>
+        <li><strong>Biochar:</strong> Improves retention of nutrients and water when charged with compost.</li>
+      </ul>
+    </section>
+
+    <section id="pests" class="container content-block">
+      <h2>Pest & Disease Management (IPM)</h2>
+      <p>Use integrated pest management (IPM): prevention first, monitoring, then targeted interventions.</p>
+      <h3>Prevention</h3>
+      <ul>
+        <li>Crop rotation, resistant varieties, proper spacing and good sanitation reduce pressure.</li>
+        <li>Encourage beneficial insects with habitat plants and avoid broad-spectrum pesticides.</li>
+      </ul>
+      <h3>Monitoring & thresholds</h3>
+      <ul>
+        <li>Inspect plants weekly. Use sticky traps and pheromone traps where appropriate.</li>
+        <li>Intervene only when pest levels exceed economic or aesthetic thresholds.</li>
+      </ul>
+      <h3>Control options</h3>
+      <ul>
+        <li>Physical: hand-picking, barriers, row covers.</li>
+        <li>Biological: release or attract predators/parasitoids (ladybugs, lacewings, parasitic wasps).</li>
+        <li>Botanical and organic-approved products: neem oil, insecticidal soaps, Bacillus thuringiensis (Bt) for caterpillars.</li>
+      </ul>
+    </section>
+
+    <section id="tutorials" class="container content-block">
+      <h2>Tutorials — Step by Step</h2>
+      <ul>
+        <li><a href="#composting">How to Build a Compost Bin</a> — materials, layering, and troubleshooting.</li>
+        <li><a href="#seed-starting">Starting Seeds Indoors</a> — timing, light, and transplant tips.</li>
+        <li><a href="#irrigation">Simple Drip Irrigation</a> — low-cost setups for water efficiency.</li>
+      </ul>
+
+      <article id="composting" class="mini-guide">
+        <h3>How to Build a Compost Bin</h3>
+        <p>Choose a shady spot, mix greens (kitchen scraps) and browns (dry leaves), keep moist and turn weekly. Aim for a balance of roughly 2 parts browns to 1 part greens.</p>
+      </article>
+    </section>
+
+    <section id="seasonal" class="container content-block">
+      <h2>Seasonal Tips</h2>
+      <p>Quick month-by-month actions for a temperate climate (adjust for your zone):</p>
+      <ul>
+        <li><strong>Spring:</strong> Prep beds, sow cool-season crops, start seedlings indoors.</li>
+        <li><strong>Summer:</strong> Mulch, irrigate early morning, watch for pests and mildew.</li>
+        <li><strong>Autumn:</strong> Plant cover crops, collect seeds, add compost.</li>
+        <li><strong>Winter:</strong> Plan crop rotations, repair tools, order seeds.</li>
+      </ul>
+    </section>
+
+    <section id="resources" class="container content-block">
+      <h2>Resources</h2>
+      <p>Trusted references and tools:</p>
+      <ul>
+        <li><a href="https://www.fao.org" target="_blank" rel="noopener">Food and Agriculture Organization (FAO)</a></li>
+        <li><a href="https://rodaleinstitute.org" target="_blank" rel="noopener">Rodale Institute — organic research</a></li>
+        <li><a href="https://extension.org" target="_blank" rel="noopener">Cooperative Extension — local growing guides</a></li>
+        <li><a href="https://www.plantmaps.com" target="_blank" rel="noopener">PlantMaps — find your hardiness zone</a></li>
+        <li><a href="https://attra.ncat.org" target="_blank" rel="noopener">ATTRA — sustainable agriculture information</a></li>
+      </ul>
+    </section>
+
+    <section id="gallery" class="container content-block">
+      <h2>Gallery</h2>
+      <p>Add photos to assets/images and update the src attributes below.</p>
       <div class="grid">
-        <article class="card">
-          <h3>Healthier Food</h3>
-          <p>Fewer synthetic residues and more nutrient-dense produce.</p>
-        </article>
-        <article class="card">
-          <h3>Soil Health</h3>
-          <p>Improved structure and fertility through organic matter and rotations.</p>
-        </article>
-        <article class="card">
-          <h3>Biodiversity</h3>
-          <p>Supports pollinators and a rich ecosystem on the farm.</p>
-        </article>
+        <img src="assets/images/bed1.jpg" alt="Raised bed with mixed vegetables" style="width:100%;height:auto;border-radius:6px">
+        <img src="assets/images/compost.jpg" alt="Active compost pile" style="width:100%;height:auto;border-radius:6px">
+        <img src="assets/images/flowers.jpg" alt="Pollinator-friendly flowers" style="width:100%;height:auto;border-radius:6px">
       </div>
+    </section>
+
+    <section id="events" class="container content-block">
+      <h2>Events & Workshops</h2>
+      <p>Upcoming (example):</p>
+      <ul>
+        <li><strong>Intro to Composting</strong> — Sat, Nov 15, 2025 — Community Center</li>
+        <li><strong>Seed Saving Workshop</strong> — Sat, Dec 6, 2025 — Community Garden</li>
+      </ul>
+      <p>Want to add an event? Email <a href="mailto:info@organicfarm.com">info@organicfarm.com</a>.</p>
+    </section>
+
+    <section id="certification" class="container content-block">
+      <h2>Organic Certification (Overview)</h2>
+      <p>Certification verifies compliance with organic standards for marketing as "organic". Requirements differ by country/region but commonly include:</p>
+      <ul>
+        <li>Transition period (commonly 2–3 years) with no prohibited synthetic inputs.</li>
+        <li>Record keeping for inputs, seed sources, sales and field history.</li>
+        <li>Written organic system plan detailing practices and inputs.</li>
+        <li>Annual inspection by an accredited certifier.</li>
+      </ul>
+      <p>Many small producers sell direct or use specific labels for "raised organically" — check local certifier rules for details and costs.</p>
+    </section>
+
+    <section id="economics" class="container content-block">
+      <h2>Economics & Marketing</h2>
+      <h3>Planning & budgeting</h3>
+      <ul>
+        <li>Estimate startup costs (beds, tools, seeds, soil amendments) and recurring costs (labor, compost, irrigation).</li>
+        <li>Small-scale organic operations often rely on direct-to-consumer sales (farmers markets, CSAs, on-farm sales) to capture higher margins.</li>
+      </ul>
+      <h3>Value-added & diversification</h3>
+      <ul>
+        <li>Consider processed goods, preserved produce, workshops, or agritourism to diversify income.</li>
+      </ul>
+      <h3>Grants & support</h3>
+      <ul>
+        <li>Search local agricultural extension programs, grants, and low-interest loans for beginning farmers and sustainable projects.</li>
+      </ul>
+    </section>
+
+    <section id="casestudies" class="container content-block">
+      <h2>Case Studies & Examples</h2>
+      <article class="mini-guide">
+        <h3>Urban Raised Beds — Small Scale</h3>
+        <p>Example: 10 raised beds (1m x 3m) with compost inputs produced a diverse vegetable supply for a CSA of 20 households. Key success factors: intensive rotations, season extension tunnels, and weekly harvest planning.</p>
+      </article>
+      <article class="mini-guide">
+        <h3>Community Garden Compost Program</h3>
+        <p>Example: Neighborhood compost hub turned municipal green waste into usable compost for shared beds, reducing waste and improving yields across plots.</p>
+      </article>
     </section>
 
     <section id="faq" class="container content-block">
@@ -75,45 +225,31 @@
         <summary>How do I start composting?</summary>
         <p>Combine greens (kitchen scraps) and browns (dry leaves), maintain moisture and occasional turning.</p>
       </details>
-    </section>
-
-    <section id="contact" class="container content-block">
-      <h2>Contact</h2>
-      <form id="contactForm" action="mailto:info@organicfarm.com" method="post" enctype="text/plain" novalidate>
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" required />
-
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required />
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button class="btn" type="submit">Send</button>
-      </form>
-      <p class="muted">Or email us at <a href="mailto:info@organicfarm.com">info@organicfarm.com</a></p>
+      <details>
+        <summary>How long before my soil improves?</summary>
+        <p>You will see changes in soil biology and tilth within a season, but significant organic matter increases may take several years of consistent inputs and cover cropping.</p>
+      </details>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
       <p>&copy; <span id="year"></span> Organic Farming — All rights reserved.</p>
+      <p class="muted">Follow: <a href="#" aria-label="Instagram">Instagram</a> · <a href="#" aria-label="Facebook">Facebook</a> · <a href="#" aria-label="Twitter">Twitter</a></p>
     </div>
   </footer>
 
   <script>
-    // simple JS: set year and basic form check
+    // set year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    const form = document.getElementById('contactForm');
-    form.addEventListener('submit', function (e) {
-      if (!form.checkValidity()) {
-        e.preventDefault();
-        form.reportValidity();
-      } else {
-        // fallback: show small notice (mailto will open email client in many cases)
-        alert('Your message will open in your email client. If that does not work, email info@organicfarm.com');
-      }
+    // mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const mainNav = document.getElementById('mainNav');
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!expanded));
+      mainNav.classList.toggle('open');
     });
   </script>
 </body>
